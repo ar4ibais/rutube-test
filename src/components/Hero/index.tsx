@@ -1,4 +1,5 @@
 import HeroImage from "../../assets/hero-image.png";
+import RateCircle from "../RateCircle";
 
 import "./hero.scss";
 
@@ -6,7 +7,7 @@ const Hero = () => {
 	return (
 		<div className="hero">
 			<div className="container">
-				<div className="hero__content">
+				<div className="container-mn">
 					<img className="hero__image" src={HeroImage} alt="" />
 					<h1 className="hero__title">Уважаемый клиент!</h1>
 					<p className="hero__text">
@@ -16,16 +17,16 @@ const Hero = () => {
 						«Отлично».
 					</p>
 					<div className="hero__rating">
-						<div className="hero__rate">0</div>
-						<div className="hero__rate">1</div>
-						<div className="hero__rate">2</div>
-						<div className="hero__rate">3</div>
-						<div className="hero__rate">4</div>
-						<div className="hero__rate">5</div>
-						<div className="hero__rate">6</div>
-						<div className="hero__rate">7</div>
-						<div className="hero__rate">8</div>
-						<div className="hero__rate">9</div>
+						<RateCircle num={0} />
+						<RateCircle num={1} />
+						<RateCircle num={2} />
+						<RateCircle num={3} />
+						<RateCircle num={4} />
+						<RateCircle num={5} />
+						<RateCircle num={6} />
+						<RateCircle num={7} />
+						<RateCircle num={8} />
+						<RateCircle num={9} />
 					</div>
 				</div>
 			</div>

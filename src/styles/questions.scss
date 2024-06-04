@@ -1,0 +1,24 @@
+.questions {
+	&__inner {
+		margin-top: 20px;
+		background-image: url("../assets/questions-bg.png");
+		background-repeat: no-repeat;
+		background-position: right bottom 70px;
+	}
+	&__item {
+		margin-bottom: 30px;
+	}
+	&__item-flex {
+		display: flex;
+		gap: 10px;
+	}
+	&__item-text {
+		margin-bottom: 10px;
+	}
+	&__text {
+		margin-bottom: 30px;
+		color: #bfc9d4;
+		font-size: 17px;
+		line-height: 22px;
+	}
+}
