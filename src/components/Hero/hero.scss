@@ -1,0 +1,50 @@
+.hero {
+	&__content {
+		text-align: center;
+		max-width: 530px;
+		width: 100%;
+		margin: 0 auto;
+	}
+	&__image {
+		display: block;
+		width: auto;
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
+	&__title {
+		font-weight: 700;
+		margin-bottom: 25px;
+	}
+	&__text {
+		margin-bottom: 25px;
+	}
+	&__rating {
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		&::before {
+			content: "Хуже некуда";
+			position: absolute;
+			left: 0;
+			bottom: -20px;
+			color: #bfc9d4;
+		}
+		&::after {
+			content: "Отлично";
+			position: absolute;
+			right: 0;
+			bottom: -20px;
+			color: #bfc9d4;
+		}
+	}
+	&__rate {
+		cursor: pointer;
+		width: 40px;
+		height: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+		border: 1px solid #1f73f9;
+	}
+}
