@@ -1,11 +1,10 @@
 import ThanksImage from "../../assets/thanks-image.png";
-import Header from "../../components/Header";
 import PrimaryButton from "../../components/PrimaryButton";
+import Title from "../../components/Title";
 
 const Thanks = () => {
 	return (
 		<>
-			<Header />
 			<div className="container">
 				<div className="container-mn">
 					<img
@@ -13,7 +12,7 @@ const Thanks = () => {
 						src={ThanksImage}
 						alt="image"
 					/>
-					<h1 className="hero__title">Спасибо за обратную связь!</h1>
+					<Title title="Спасибо за обратную связь!" />
 					<p className="hero__text">
 						Это поможет нам улучшить сервис
 					</p>

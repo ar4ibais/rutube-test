@@ -3,7 +3,8 @@
 		margin-top: 20px;
 		background-image: url("../assets/questions-bg.png");
 		background-repeat: no-repeat;
-		background-position: right bottom 70px;
+		background-position: right -10px bottom 100px;
+		padding-bottom: 25px;
 	}
 	&__item {
 		margin-bottom: 30px;
@@ -11,8 +12,11 @@
 	&__item-flex {
 		display: flex;
 		gap: 10px;
+		flex-wrap: wrap;
 	}
 	&__item-text {
+		font-size: 12px;
+		line-height: 20px;
 		margin-bottom: 10px;
 	}
 	&__text {
@@ -20,5 +24,13 @@
 		color: #bfc9d4;
 		font-size: 17px;
 		line-height: 22px;
+	}
+}
+
+@media (max-width: 992px) {
+	.questions {
+		&__inner {
+			background-image: none;
+		}
 	}
 }

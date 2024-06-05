@@ -1,4 +1,3 @@
-import Header from "../../components/Header";
 import PrimaryButton from "../../components/PrimaryButton";
 import RateCircle from "../../components/RateCircle";
 import "../../styles/questions.scss";
@@ -6,7 +5,6 @@ import "../../styles/questions.scss";
 const Questions = () => {
 	return (
 		<>
-			<Header />
 			<div className="container">
 				<div className="questions__inner">
 					<p className="questions__text">
@@ -81,6 +79,7 @@ const Questions = () => {
 							RUTUBE коллеге или другу?
 						</p>
 						<div className="questions__item-flex">
+							<RateCircle num={0} />
 							<RateCircle num={1} />
 							<RateCircle num={2} />
 							<RateCircle num={3} />

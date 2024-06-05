@@ -5,11 +5,9 @@
 		margin: 0 auto;
 		margin-bottom: 10px;
 	}
-	&__title {
-		font-weight: 700;
-		margin-bottom: 25px;
-	}
 	&__text {
+		font-size: 17px;
+		line-height: 22px;
 		margin-bottom: 25px;
 	}
 	&__rating {
@@ -40,5 +38,30 @@
 		align-items: center;
 		border-radius: 50%;
 		border: 1px solid #1f73f9;
+	}
+}
+
+@media (max-width: 768px) {
+	.hero {
+		&__text {
+			font-size: 12px;
+			line-height: 20px;
+			margin-bottom: 15px;
+		}
+		&__rating {
+			display: grid;
+			max-width: 220px;
+			margin: 0 auto;
+			grid-template-columns: repeat(5, 1fr);
+			gap: 10px 5px;
+			&::before {
+				left: -30px;
+				bottom: -30px;
+			}
+			&::after {
+				right: -30px;
+				bottom: -30px;
+			}
+		}
 	}
 }

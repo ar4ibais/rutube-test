@@ -1,5 +1,6 @@
 import HeroImage from "../../assets/hero-image.png";
 import RateCircle from "../RateCircle";
+import Title from "../Title";
 
 import "./hero.scss";
 
@@ -9,7 +10,7 @@ const Hero = () => {
 			<div className="container">
 				<div className="container-mn">
 					<img className="hero__image" src={HeroImage} alt="" />
-					<h1 className="hero__title">Уважаемый клиент!</h1>
+					<Title title="Уважаемый клиент!" />
 					<p className="hero__text">
 						Запрос закрыт. Пожалуйста, оцените качество
 						предоставленного сервиса по данному обращению, используя
