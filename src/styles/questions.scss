@@ -25,6 +25,23 @@
 		font-size: 17px;
 		line-height: 22px;
 	}
+	&__rate {
+		cursor: pointer;
+		width: 200px;
+		height: 40px;
+		padding: 10px 16px;
+		display: flex;
+		align-items: center;
+		border-radius: 20px;
+		border: 1px solid #1f73f9;
+		transition: all 0.2s ease-in-out;
+		&.active {
+			border-color: #fff;
+		}
+		&:hover {
+			transform: translateY(-4px);
+		}
+	}
 }
 
 @media (max-width: 992px) {
